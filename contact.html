@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact — Northbridge Visual Group</title>
-  <meta name="description" content="Get in touch with Northbridge Visual Group to book a shoot or discuss your project.">
+  <meta name="description" content="Book a corporate headshot day with Northbridge Visual Group. We come to your office — law firms, real estate teams, colleges welcome.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
@@ -27,33 +27,31 @@
   </button>
 </nav>
 
-<!-- Page Hero -->
 <div class="page-hero">
   <div class="page-hero-bg" style="background-image:url('IMG_00521%20(2)%20(1).jpg')"></div>
   <div class="page-hero-content">
-    <span class="label">Let's Work Together</span>
-    <h1>Contact</h1>
+    <span class="label">Get in Touch</span>
+    <h1>Book a Headshot Day</h1>
   </div>
 </div>
 
-<!-- Contact Section -->
 <section>
   <div class="contact-wrap">
     <div class="contact-info">
-      <h3>Get in Touch</h3>
-      <p>Ready to elevate your visuals? We'd love to hear about your project.</p>
+      <h3>Ready to Book?</h3>
+      <p>Fill out the form and we'll get back to you within one business day with availability and a custom quote.</p>
 
-      <h3>Email</h3>
-      <p>hello@northbridgevisual.com</p>
+      <h3>Who We Work With</h3>
+      <p>Law firms, real estate offices, corporate teams, and colleges &amp; universities.</p>
 
-      <h3>Phone</h3>
-      <p>Available upon enquiry</p>
+      <h3>Pricing</h3>
+      <p>Small team (10–20): $1,500–$2,500<br>
+         Mid team (20–50): $2,500–$4,000<br>
+         Large team (50+): $4,000–$6,000+<br>
+         College days: custom rates available</p>
 
       <h3>Turnaround</h3>
-      <p>Edited galleries delivered within 48 hours of your shoot.</p>
-
-      <h3>Service Area</h3>
-      <p>Available regionally and for travel assignments.</p>
+      <p>Edited images delivered within 48 hours of your shoot day.</p>
     </div>
 
     <div>
@@ -62,24 +60,31 @@
         <p style="display:none"><input name="bot-field"></p>
 
         <input type="text" name="name" placeholder="Your Name" required>
+        <input type="text" name="company" placeholder="Company / Organisation" required>
         <input type="email" name="email" placeholder="Email Address" required>
-        <input type="tel" name="phone" placeholder="Phone (optional)">
-        <select name="service">
-          <option value="" disabled selected>Type of Project</option>
-          <option value="real-estate">Real Estate Photography</option>
-          <option value="video">Cinematic Video</option>
-          <option value="aerial">Aerial / Drone</option>
-          <option value="commercial">Commercial / Editorial</option>
+        <input type="tel" name="phone" placeholder="Phone Number">
+        <select name="org-type">
+          <option value="" disabled selected>Type of Organisation</option>
+          <option value="law-firm">Law Firm</option>
+          <option value="real-estate">Real Estate Office</option>
+          <option value="corporate">Corporate / Business</option>
+          <option value="college">College / University</option>
           <option value="other">Other</option>
         </select>
-        <textarea name="message" placeholder="Tell us about your project…" required></textarea>
+        <select name="team-size">
+          <option value="" disabled selected>Approximate Team Size</option>
+          <option value="10-20">10–20 people ($1,500–$2,500)</option>
+          <option value="20-50">20–50 people ($2,500–$4,000)</option>
+          <option value="50+">50+ people ($4,000–$6,000+)</option>
+          <option value="college">College day (custom rate)</option>
+        </select>
+        <textarea name="message" placeholder="Anything else we should know? Preferred dates, location, special requirements…"></textarea>
         <button type="submit" class="btn btn-filled">Send Enquiry</button>
       </form>
     </div>
   </div>
 </section>
 
-<!-- Footer -->
 <footer>
   <div class="footer-left">
     <div class="logo-text">Northbridge Visual Group</div>
@@ -95,12 +100,9 @@
 
 <script>
   const nav = document.getElementById('nav');
-  window.addEventListener('scroll', () => {
-    nav.classList.toggle('scrolled', window.scrollY > 60);
-  });
-  const hamburger = document.getElementById('hamburger');
-  const navLinks = document.getElementById('navLinks');
-  hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
+  window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 60));
+  document.getElementById('hamburger').addEventListener('click', () =>
+    document.getElementById('navLinks').classList.toggle('open'));
 </script>
 </body>
 </html>

@@ -12,7 +12,6 @@
   <style>
     .gallery-item { cursor: pointer; }
     .gallery-item img { object-position: top; }
-
     .lightbox {
       display: none;
       position: fixed;
@@ -23,24 +22,11 @@
       justify-content: center;
     }
     .lightbox.open { display: flex; }
-    .lightbox img {
-      max-width: 90vw;
-      max-height: 90vh;
-      object-fit: contain;
-      box-shadow: 0 20px 60px rgba(0,0,0,0.6);
-    }
+    .lightbox img { max-width: 90vw; max-height: 90vh; object-fit: contain; box-shadow: 0 20px 60px rgba(0,0,0,0.6); }
     .lightbox-close {
-      position: absolute;
-      top: 1.5rem;
-      right: 2rem;
-      font-size: 2rem;
-      color: #fff;
-      cursor: pointer;
-      background: none;
-      border: none;
-      line-height: 1;
-      opacity: 0.7;
-      transition: opacity 0.2s;
+      position: absolute; top: 1.5rem; right: 2rem;
+      font-size: 2rem; color: #fff; cursor: pointer;
+      background: none; border: none; line-height: 1; opacity: 0.7; transition: opacity 0.2s;
     }
     .lightbox-close:hover { opacity: 1; }
   </style>
@@ -49,7 +35,7 @@
 
 <nav id="nav" class="scrolled">
   <div class="nav-logo">
-    <img src="ChatGPT%20Image%20Jun%208%2C%202026%2C%2003_12_23%20PM.png" alt="Northbridge Visual Group">
+    <a href="index.html"><img src="logo.svg" alt="Northbridge Visual Group"></a>
   </div>
   <ul class="nav-links" id="navLinks">
     <li><a href="index.html">Home</a></li>
@@ -84,7 +70,6 @@
   </div>
 </section>
 
-<!-- Lightbox -->
 <div class="lightbox" id="lightbox">
   <button class="lightbox-close" id="lightboxClose">&times;</button>
   <img id="lightboxImg" src="" alt="">
@@ -108,17 +93,11 @@
   window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 60));
   document.getElementById('hamburger').addEventListener('click', () =>
     document.getElementById('navLinks').classList.toggle('open'));
-
   const lightbox = document.getElementById('lightbox');
   const lightboxImg = document.getElementById('lightboxImg');
-
   document.querySelectorAll('.gallery-item img').forEach(img => {
-    img.addEventListener('click', () => {
-      lightboxImg.src = img.src;
-      lightbox.classList.add('open');
-    });
+    img.addEventListener('click', () => { lightboxImg.src = img.src; lightbox.classList.add('open'); });
   });
-
   function closeLightbox() { lightbox.classList.remove('open'); }
   document.getElementById('lightboxClose').addEventListener('click', closeLightbox);
   lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80">
+  <defs>
+    <style>
+      .mark { fill: #c9a84c; }
+      .wordmark { fill: #ffffff; font-family: 'Georgia', serif; letter-spacing: 0.18em; }
+      .sub { fill: #c9a84c; font-family: 'Arial', sans-serif; letter-spacing: 0.3em; }
+      .rule { stroke: #c9a84c; stroke-width: 0.75; }
+    </style>
+  </defs>
+
+  <!-- NB Monogram -->
+  <!-- N -->
+  <text x="8" y="54" font-family="Georgia, serif" font-size="52" font-weight="400" fill="#ffffff" letter-spacing="-2">N</text>
+  <!-- B slightly overlapping -->
+  <text x="30" y="54" font-family="Georgia, serif" font-size="52" font-weight="400" fill="#c9a84c" letter-spacing="-2">B</text>
+
+  <!-- Vertical divider -->
+  <line x1="78" y1="12" x2="78" y2="68" stroke="#c9a84c" stroke-width="0.75" opacity="0.6"/>
+
+  <!-- NORTHBRIDGE -->
+  <text x="90" y="38" font-family="Georgia, serif" font-size="17" font-weight="400" fill="#ffffff" letter-spacing="3">NORTHBRIDGE</text>
+
+  <!-- rule -->
+  <line x1="90" y1="46" x2="312" y2="46" stroke="#c9a84c" stroke-width="0.5" opacity="0.5"/>
+
+  <!-- VISUAL GROUP -->
+  <text x="90" y="62" font-family="Arial, sans-serif" font-size="9" font-weight="400" fill="#c9a84c" letter-spacing="4">VISUAL GROUP</text>
+</svg>

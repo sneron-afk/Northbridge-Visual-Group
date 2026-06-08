@@ -1,40 +1,104 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 160" width="340" height="160">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 230" width="480" height="230">
 
-  <!-- NB Monogram -->
+  <!-- === BRIDGE (drawn first so letters sit on top) === -->
+
+  <!-- Sweeping base arc -->
+  <path d="M95 158 Q240 138 385 158" fill="none" stroke="#c9a84c" stroke-width="1.8" opacity="0.9"/>
+
+  <!-- Left approach line -->
+  <line x1="70" y1="158" x2="130" y2="158" stroke="#c9a84c" stroke-width="1.8" opacity="0.9"/>
+  <!-- Right approach line -->
+  <line x1="350" y1="158" x2="410" y2="158" stroke="#c9a84c" stroke-width="1.8" opacity="0.9"/>
+
+  <!-- Road deck -->
+  <line x1="130" y1="158" x2="350" y2="158" stroke="#c9a84c" stroke-width="1.8"/>
+
+  <!-- LEFT TOWER -->
+  <line x1="178" y1="60" x2="178" y2="158" stroke="#c9a84c" stroke-width="2.8"/>
+  <!-- tower cap -->
+  <rect x="174" y="58" width="8" height="5" fill="#c9a84c"/>
+  <!-- tower crossbars -->
+  <line x1="171" y1="90" x2="185" y2="90" stroke="#c9a84c" stroke-width="1.8"/>
+  <line x1="171" y1="110" x2="185" y2="110" stroke="#c9a84c" stroke-width="1.5"/>
+  <!-- tower verticals between crossbars -->
+  <line x1="174" y1="90" x2="174" y2="110" stroke="#c9a84c" stroke-width="1"/>
+  <line x1="178" y1="90" x2="178" y2="110" stroke="#c9a84c" stroke-width="1"/>
+  <line x1="182" y1="90" x2="182" y2="110" stroke="#c9a84c" stroke-width="1"/>
+
+  <!-- RIGHT TOWER -->
+  <line x1="302" y1="60" x2="302" y2="158" stroke="#c9a84c" stroke-width="2.8"/>
+  <!-- tower cap -->
+  <rect x="298" y="58" width="8" height="5" fill="#c9a84c"/>
+  <!-- tower crossbars -->
+  <line x1="295" y1="90" x2="309" y2="90" stroke="#c9a84c" stroke-width="1.8"/>
+  <line x1="295" y1="110" x2="309" y2="110" stroke="#c9a84c" stroke-width="1.5"/>
+  <!-- tower verticals between crossbars -->
+  <line x1="298" y1="90" x2="298" y2="110" stroke="#c9a84c" stroke-width="1"/>
+  <line x1="302" y1="90" x2="302" y2="110" stroke="#c9a84c" stroke-width="1"/>
+  <line x1="306" y1="90" x2="306" y2="110" stroke="#c9a84c" stroke-width="1"/>
+
+  <!-- Main cables: left tower out to left edge -->
+  <path d="M178 63 Q130 120 70 158" fill="none" stroke="#c9a84c" stroke-width="1.4"/>
+  <!-- Main cable: between towers (sag) -->
+  <path d="M178 63 Q240 105 302 63" fill="none" stroke="#c9a84c" stroke-width="1.4"/>
+  <!-- Main cables: right tower out to right edge -->
+  <path d="M302 63 Q350 120 410 158" fill="none" stroke="#c9a84c" stroke-width="1.4"/>
+
+  <!-- Suspenders between towers -->
+  <line x1="196" y1="93" x2="196" y2="158" stroke="#c9a84c" stroke-width="0.9" opacity="0.8"/>
+  <line x1="214" y1="100" x2="214" y2="158" stroke="#c9a84c" stroke-width="0.9" opacity="0.8"/>
+  <line x1="232" y1="104" x2="232" y2="158" stroke="#c9a84c" stroke-width="0.9" opacity="0.8"/>
+  <line x1="250" y1="105" x2="250" y2="158" stroke="#c9a84c" stroke-width="0.9" opacity="0.8"/>
+  <line x1="268" y1="104" x2="268" y2="158" stroke="#c9a84c" stroke-width="0.9" opacity="0.8"/>
+  <line x1="286" y1="100" x2="286" y2="158" stroke="#c9a84c" stroke-width="0.9" opacity="0.8"/>
+
+  <!-- === NB MONOGRAM (on top of bridge) === -->
   <!-- N -->
-  <text x="107" y="72" font-family="Georgia, 'Times New Roman', serif" font-size="68" font-weight="400" fill="#ffffff" text-anchor="middle">N</text>
-  <!-- B -->
-  <text x="175" y="72" font-family="Georgia, 'Times New Roman', serif" font-size="68" font-weight="400" fill="#ffffff" text-anchor="middle" dx="12">B</text>
+  <text
+    x="148"
+    y="148"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="130"
+    font-weight="400"
+    fill="#ffffff"
+  >N</text>
+  <!-- B (overlapping N slightly) -->
+  <text
+    x="228"
+    y="148"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="118"
+    font-weight="400"
+    fill="#ffffff"
+  >B</text>
 
-  <!-- Bridge cables (suspension bridge silhouette) -->
-  <!-- Road/base line -->
-  <line x1="80" y1="90" x2="260" y2="90" stroke="#c9a84c" stroke-width="1.5"/>
-  <!-- Left tower -->
-  <line x1="128" y1="68" x2="128" y2="90" stroke="#c9a84c" stroke-width="2"/>
-  <!-- Right tower -->
-  <line x1="212" y1="68" x2="212" y2="90" stroke="#c9a84c" stroke-width="2"/>
-  <!-- Left cable arc -->
-  <path d="M128 72 Q170 84 212 72" fill="none" stroke="#c9a84c" stroke-width="1.2"/>
-  <!-- Suspender lines left side -->
-  <line x1="140" y1="77" x2="140" y2="90" stroke="#c9a84c" stroke-width="0.8" opacity="0.8"/>
-  <line x1="152" y1="80" x2="152" y2="90" stroke="#c9a84c" stroke-width="0.8" opacity="0.8"/>
-  <line x1="164" y1="82" x2="164" y2="90" stroke="#c9a84c" stroke-width="0.8" opacity="0.8"/>
-  <line x1="176" y1="82" x2="176" y2="90" stroke="#c9a84c" stroke-width="0.8" opacity="0.8"/>
-  <line x1="188" y1="80" x2="188" y2="90" stroke="#c9a84c" stroke-width="0.8" opacity="0.8"/>
-  <line x1="200" y1="77" x2="200" y2="90" stroke="#c9a84c" stroke-width="0.8" opacity="0.8"/>
-  <!-- Left shore line -->
-  <line x1="80" y1="90" x2="100" y2="90" stroke="#c9a84c" stroke-width="1.5"/>
-  <!-- Right shore line -->
-  <line x1="240" y1="90" x2="260" y2="90" stroke="#c9a84c" stroke-width="1.5"/>
+  <!-- === WORDMARK === -->
+  <text
+    x="240"
+    y="188"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="26"
+    font-weight="400"
+    fill="#ffffff"
+    text-anchor="middle"
+    letter-spacing="8"
+  >NORTHBRIDGE</text>
 
-  <!-- NORTHBRIDGE -->
-  <text x="170" y="116" font-family="Georgia, 'Times New Roman', serif" font-size="22" font-weight="400" fill="#ffffff" text-anchor="middle" letter-spacing="6">NORTHBRIDGE</text>
-
-  <!-- Rules flanking tagline -->
-  <line x1="52" y1="133" x2="112" y2="133" stroke="#c9a84c" stroke-width="0.75"/>
-  <line x1="228" y1="133" x2="288" y2="133" stroke="#c9a84c" stroke-width="0.75"/>
-
-  <!-- Tagline -->
-  <text x="170" y="137" font-family="Arial, Helvetica, sans-serif" font-size="7.5" fill="#c9a84c" text-anchor="middle" letter-spacing="2.5">PROFESSIONAL IMAGES. LASTING IMPACT.</text>
+  <!-- === RULED TAGLINE === -->
+  <!-- Left rule -->
+  <line x1="52" y1="207" x2="118" y2="207" stroke="#c9a84c" stroke-width="0.9"/>
+  <!-- Right rule -->
+  <line x1="362" y1="207" x2="428" y2="207" stroke="#c9a84c" stroke-width="0.9"/>
+  <!-- Tagline text -->
+  <text
+    x="240"
+    y="211"
+    font-family="'Arial', Helvetica, sans-serif"
+    font-size="8"
+    font-weight="400"
+    fill="#c9a84c"
+    text-anchor="middle"
+    letter-spacing="2.8"
+  >PROFESSIONAL IMAGES. LASTING IMPACT.</text>
 
 </svg>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio — Northbridge Visual Group</title>
+  <meta name="description" content="Browse the portfolio of Northbridge Visual Group — real estate, commercial, and editorial photography and videography.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav id="nav" class="scrolled">
+  <div class="nav-logo">
+    <img src="ChatGPT%20Image%20Jun%208%2C%202026%2C%2003_12_23%20PM.png" alt="Northbridge Visual Group">
+  </div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Page Hero -->
+<div class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('IMG_9775highend%20(1)%20(1).jpg')"></div>
+  <div class="page-hero-content">
+    <span class="label">Our Work</span>
+    <h1>Portfolio</h1>
+  </div>
+</div>
+
+<!-- Gallery -->
+<section>
+  <div class="section-header">
+    <span class="label">Selected Work</span>
+    <h2>Real Estate &amp; Commercial</h2>
+    <div class="divider"></div>
+    <p>Every image is crafted to showcase a property or brand at its very best.</p>
+  </div>
+
+  <div class="gallery-grid">
+    <div class="gallery-item">
+      <img src="IMG_2381%20(1).jpg" alt="Luxury property photography" loading="lazy">
+    </div>
+    <div class="gallery-item">
+      <img src="IMG_9775highend%20(1)%20(1).jpg" alt="High-end real estate" loading="lazy">
+    </div>
+    <div class="gallery-item">
+      <img src="IMG_9906alternate%20(1).jpg" alt="Architectural photography" loading="lazy">
+    </div>
+    <div class="gallery-item">
+      <img src="IMG_00521%20(2)%20(1).jpg" alt="Interior photography" loading="lazy">
+    </div>
+    <div class="gallery-item">
+      <img src="IMG_0144LT%20(1)%20(1).jpg" alt="Exterior photography" loading="lazy">
+    </div>
+    <div class="gallery-item">
+      <img src="IMG_9906alternate%20(1).jpg" alt="Commercial property" loading="lazy">
+    </div>
+  </div>
+
+  <div class="portfolio-cta" style="margin-top:4rem">
+    <a href="contact.html" class="btn btn-filled">Book a Shoot</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-left">
+    <div class="logo-text">Northbridge Visual Group</div>
+    <p>&copy; 2026 Northbridge Visual Group. All rights reserved.</p>
+  </div>
+  <ul class="footer-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</footer>
+
+<script>
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+  });
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('navLinks');
+  hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
+</script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Northbridge Visual Group</title>
+  <meta name="description" content="Get in touch with Northbridge Visual Group to book a shoot or discuss your project.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav id="nav" class="scrolled">
+  <div class="nav-logo">
+    <img src="ChatGPT%20Image%20Jun%208%2C%202026%2C%2003_12_23%20PM.png" alt="Northbridge Visual Group">
+  </div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Page Hero -->
+<div class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('IMG_00521%20(2)%20(1).jpg')"></div>
+  <div class="page-hero-content">
+    <span class="label">Let's Work Together</span>
+    <h1>Contact</h1>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<section>
+  <div class="contact-wrap">
+    <div class="contact-info">
+      <h3>Get in Touch</h3>
+      <p>Ready to elevate your visuals? We'd love to hear about your project.</p>
+
+      <h3>Email</h3>
+      <p>hello@northbridgevisual.com</p>
+
+      <h3>Phone</h3>
+      <p>Available upon enquiry</p>
+
+      <h3>Turnaround</h3>
+      <p>Edited galleries delivered within 48 hours of your shoot.</p>
+
+      <h3>Service Area</h3>
+      <p>Available regionally and for travel assignments.</p>
+    </div>
+
+    <div>
+      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact">
+        <p style="display:none"><input name="bot-field"></p>
+
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+        <input type="tel" name="phone" placeholder="Phone (optional)">
+        <select name="service">
+          <option value="" disabled selected>Type of Project</option>
+          <option value="real-estate">Real Estate Photography</option>
+          <option value="video">Cinematic Video</option>
+          <option value="aerial">Aerial / Drone</option>
+          <option value="commercial">Commercial / Editorial</option>
+          <option value="other">Other</option>
+        </select>
+        <textarea name="message" placeholder="Tell us about your project…" required></textarea>
+        <button type="submit" class="btn btn-filled">Send Enquiry</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-left">
+    <div class="logo-text">Northbridge Visual Group</div>
+    <p>&copy; 2026 Northbridge Visual Group. All rights reserved.</p>
+  </div>
+  <ul class="footer-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</footer>
+
+<script>
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+  });
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('navLinks');
+  hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
+</script>
+</body>
+</html>

@@ -3,43 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio — Northbridge Visual Group</title>
-  <meta name="description" content="Photography by Northbridge Visual Group.">
+  <title>Gallery — Momento Photo Booth</title>
+  <meta name="description" content="See Momento Photo Booth in action at weddings, corporate events, and celebrations.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <style>
-    .gallery-item { cursor: pointer; }
-    .gallery-item img { object-position: top; }
-    .lightbox {
-      display: none;
-      position: fixed;
-      inset: 0;
-      background: rgba(6,14,26,0.95);
-      z-index: 200;
-      align-items: center;
-      justify-content: center;
-    }
-    .lightbox.open { display: flex; }
-    .lightbox img { max-width: 90vw; max-height: 90vh; object-fit: contain; box-shadow: 0 20px 60px rgba(0,0,0,0.6); }
-    .lightbox-close {
-      position: absolute; top: 1.5rem; right: 2rem;
-      font-size: 2rem; color: #fff; cursor: pointer;
-      background: none; border: none; line-height: 1; opacity: 0.7; transition: opacity 0.2s;
-    }
-    .lightbox-close:hover { opacity: 1; }
-  </style>
 </head>
 <body>
 
 <nav id="nav" class="scrolled">
   <div class="nav-logo">
-    <a href="index.html"><img src="logo.svg" alt="Northbridge Visual Group"></a>
+    <a href="index.html"><img src="logo.svg" alt="Momento Photo Booth"></a>
   </div>
   <ul class="nav-links" id="navLinks">
     <li><a href="index.html">Home</a></li>
-    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="portfolio.html">Gallery</a></li>
     <li><a href="about.html">About</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
@@ -49,40 +28,38 @@
 </nav>
 
 <div class="page-hero">
-  <div class="page-hero-bg" style="background-image:url('IMG_9775highend%20(1)%20(1).jpg')"></div>
+  <div class="page-hero-bg"></div>
   <div class="page-hero-content">
     <span class="label">Our Work</span>
-    <h1>Portfolio</h1>
+    <h1>Gallery</h1>
   </div>
 </div>
 
 <section>
+  <div class="section-header" style="margin-bottom: 3rem;">
+    <p>We're building out our gallery with photos from recent events — check back soon, or ask us for samples when you get in touch.</p>
+  </div>
   <div class="gallery-grid">
-    <div class="gallery-item"><img src="IMG_2381%20(1).jpg" alt="" loading="lazy"></div>
-    <div class="gallery-item"><img src="IMG_9775highend%20(1)%20(1).jpg" alt="" loading="lazy"></div>
-    <div class="gallery-item"><img src="IMG_9906alternate%20(1).jpg" alt="" loading="lazy"></div>
-    <div class="gallery-item"><img src="IMG_00521%20(2)%20(1).jpg" alt="" loading="lazy"></div>
-    <div class="gallery-item"><img src="IMG_0144LT%20(1)%20(1).jpg" alt="" loading="lazy"></div>
-    <div class="gallery-item"><img src="IMG_0081%20(1).jpg" alt="" loading="lazy"></div>
+    <div class="gallery-item"><div class="media-placeholder"><span class="mp-icon">✦</span><span>Wedding Reception</span></div></div>
+    <div class="gallery-item"><div class="media-placeholder"><span class="mp-icon">◈</span><span>Corporate Gala</span></div></div>
+    <div class="gallery-item"><div class="media-placeholder"><span class="mp-icon">✦</span><span>Birthday Celebration</span></div></div>
+    <div class="gallery-item"><div class="media-placeholder"><span class="mp-icon">▭</span><span>Magic Mirror Close-Up</span></div></div>
+    <div class="gallery-item"><div class="media-placeholder"><span class="mp-icon">✦</span><span>Guests Posing at the Mirror</span></div></div>
+    <div class="gallery-item"><div class="media-placeholder"><span class="mp-icon">◈</span><span>Custom Print Overlay</span></div></div>
   </div>
   <div class="portfolio-cta" style="margin-top:4rem">
-    <a href="contact.html" class="btn btn-filled">Book a Headshot Day</a>
+    <a href="contact.html" class="btn btn-filled">Check Availability</a>
   </div>
 </section>
 
-<div class="lightbox" id="lightbox">
-  <button class="lightbox-close" id="lightboxClose">&times;</button>
-  <img id="lightboxImg" src="" alt="">
-</div>
-
 <footer>
   <div class="footer-left">
-    <div class="logo-text">Northbridge Visual Group</div>
-    <p>&copy; 2026 Northbridge Visual Group. All rights reserved.</p>
+    <div class="logo-text">Momento Photo Booth</div>
+    <p>&copy; 2026 Momento Photo Booth. All rights reserved.</p>
   </div>
   <ul class="footer-links">
     <li><a href="index.html">Home</a></li>
-    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="portfolio.html">Gallery</a></li>
     <li><a href="about.html">About</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
@@ -93,15 +70,6 @@
   window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 60));
   document.getElementById('hamburger').addEventListener('click', () =>
     document.getElementById('navLinks').classList.toggle('open'));
-  const lightbox = document.getElementById('lightbox');
-  const lightboxImg = document.getElementById('lightboxImg');
-  document.querySelectorAll('.gallery-item img').forEach(img => {
-    img.addEventListener('click', () => { lightboxImg.src = img.src; lightbox.classList.add('open'); });
-  });
-  function closeLightbox() { lightbox.classList.remove('open'); }
-  document.getElementById('lightboxClose').addEventListener('click', closeLightbox);
-  lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
-  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
 </script>
 </body>
 </html>

@@ -1,50 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 240" width="480" height="240">
 
-  <!-- Bridge -->
-  <path d="M95 158 Q240 138 385 158" fill="none" stroke="#c9a84c" stroke-width="1.8" opacity="0.9"/>
-  <line x1="70" y1="158" x2="130" y2="158" stroke="#c9a84c" stroke-width="1.8" opacity="0.9"/>
-  <line x1="350" y1="158" x2="410" y2="158" stroke="#c9a84c" stroke-width="1.8" opacity="0.9"/>
-  <line x1="130" y1="158" x2="350" y2="158" stroke="#c9a84c" stroke-width="1.8"/>
-  <!-- Left tower -->
-  <line x1="178" y1="60" x2="178" y2="158" stroke="#c9a84c" stroke-width="2.8"/>
-  <rect x="174" y="58" width="8" height="5" fill="#c9a84c"/>
-  <line x1="171" y1="90" x2="185" y2="90" stroke="#c9a84c" stroke-width="1.8"/>
-  <line x1="171" y1="110" x2="185" y2="110" stroke="#c9a84c" stroke-width="1.5"/>
-  <line x1="174" y1="90" x2="174" y2="110" stroke="#c9a84c" stroke-width="1"/>
-  <line x1="178" y1="90" x2="178" y2="110" stroke="#c9a84c" stroke-width="1"/>
-  <line x1="182" y1="90" x2="182" y2="110" stroke="#c9a84c" stroke-width="1"/>
-  <!-- Right tower -->
-  <line x1="302" y1="60" x2="302" y2="158" stroke="#c9a84c" stroke-width="2.8"/>
-  <rect x="298" y="58" width="8" height="5" fill="#c9a84c"/>
-  <line x1="295" y1="90" x2="309" y2="90" stroke="#c9a84c" stroke-width="1.8"/>
-  <line x1="295" y1="110" x2="309" y2="110" stroke="#c9a84c" stroke-width="1.5"/>
-  <line x1="298" y1="90" x2="298" y2="110" stroke="#c9a84c" stroke-width="1"/>
-  <line x1="302" y1="90" x2="302" y2="110" stroke="#c9a84c" stroke-width="1"/>
-  <line x1="306" y1="90" x2="306" y2="110" stroke="#c9a84c" stroke-width="1"/>
-  <!-- Cables -->
-  <path d="M178 63 Q130 120 70 158" fill="none" stroke="#c9a84c" stroke-width="1.4"/>
-  <path d="M178 63 Q240 105 302 63" fill="none" stroke="#c9a84c" stroke-width="1.4"/>
-  <path d="M302 63 Q350 120 410 158" fill="none" stroke="#c9a84c" stroke-width="1.4"/>
-  <!-- Suspenders -->
-  <line x1="196" y1="93" x2="196" y2="158" stroke="#c9a84c" stroke-width="0.9" opacity="0.8"/>
-  <line x1="214" y1="100" x2="214" y2="158" stroke="#c9a84c" stroke-width="0.9" opacity="0.8"/>
-  <line x1="232" y1="104" x2="232" y2="158" stroke="#c9a84c" stroke-width="0.9" opacity="0.8"/>
-  <line x1="250" y1="105" x2="250" y2="158" stroke="#c9a84c" stroke-width="0.9" opacity="0.8"/>
-  <line x1="268" y1="104" x2="268" y2="158" stroke="#c9a84c" stroke-width="0.9" opacity="0.8"/>
-  <line x1="286" y1="100" x2="286" y2="158" stroke="#c9a84c" stroke-width="0.9" opacity="0.8"/>
+  <!-- Mirror booth icon -->
+  <rect x="188" y="18" width="104" height="72" rx="14" fill="none" stroke="#d4af6a" stroke-width="3"/>
+  <circle cx="240" cy="46" r="7" fill="none" stroke="#d4af6a" stroke-width="2.4"/>
+  <circle cx="240" cy="46" r="2.4" fill="#d4af6a"/>
+  <path d="M240 62 C240 58 233 55 233 61 C233 66 240 72 240 72 C240 72 247 66 247 61 C247 55 240 58 240 62 Z" fill="#e8b4b8"/>
 
-  <!-- NB Monogram -->
-  <text x="148" y="148" font-family="Georgia, 'Times New Roman', serif" font-size="130" font-weight="400" fill="#ffffff">N</text>
-  <text x="228" y="148" font-family="Georgia, 'Times New Roman', serif" font-size="118" font-weight="400" fill="#ffffff">B</text>
+  <!-- Momento wordmark -->
+  <text x="240" y="160" font-family="'Cormorant Garamond', Georgia, 'Times New Roman', serif" font-size="66" font-style="italic" font-weight="500" fill="#f7f1ea" text-anchor="middle">Momento</text>
 
-  <!-- NORTHBRIDGE wordmark -->
-  <text x="240" y="188" font-family="Georgia, 'Times New Roman', serif" font-size="26" font-weight="400" fill="#ffffff" text-anchor="middle" letter-spacing="8">NORTHBRIDGE</text>
+  <!-- Tagline -->
+  <text x="240" y="192" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#d4af6a" text-anchor="middle" letter-spacing="7">PHOTO BOOTH</text>
 
   <!-- Rules -->
-  <line x1="36" y1="212" x2="96" y2="212" stroke="#c9a84c" stroke-width="1"/>
-  <line x1="384" y1="212" x2="444" y2="212" stroke="#c9a84c" stroke-width="1"/>
-
-  <!-- Tagline - larger and white -->
-  <text x="240" y="217" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" fill="#ffffff" text-anchor="middle" letter-spacing="2.5">PROFESSIONAL IMAGES. LASTING IMPACT.</text>
+  <line x1="70" y1="192" x2="150" y2="192" stroke="#d4af6a" stroke-width="1" opacity="0.8"/>
+  <line x1="330" y1="192" x2="410" y2="192" stroke="#d4af6a" stroke-width="1" opacity="0.8"/>
 
 </svg>
